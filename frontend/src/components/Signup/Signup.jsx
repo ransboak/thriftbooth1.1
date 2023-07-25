@@ -6,6 +6,7 @@ import { RxAvatar } from "react-icons/rx";
 import axios from "axios";
 import { server } from "../../server";
 import { toast } from "react-toastify";
+import Logo from '../../Assests/logo.png'
 
 const Singup = () => {
   const [email, setEmail] = useState("");
@@ -45,6 +46,7 @@ const Singup = () => {
 
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
+      <img src={Logo} alt="" className="w-[10rem] mx-auto" />
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
         <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
           Register as a new user
